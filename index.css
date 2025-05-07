@@ -214,3 +214,81 @@ footer{
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    header nav a span {
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    main article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8rem;
+    }
+
+    .itens {
+        position: static;
+        width: 90% !important;
+        padding: 1rem;
+    }
+
+    .itens-info {
+        border-radius: 20px;
+    }
+
+    .itens nav {
+        position: static;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .itens nav a {
+        width: 100%;
+    }
+
+    main article img {
+        width: 200px;
+        position: static;
+        margin-top: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    footer nav {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    footer div p {
+        margin-left: 0;
+    }
+}
