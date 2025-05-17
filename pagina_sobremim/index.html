@@ -4,6 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* RESPONSIVIDADE PARA SOBRE MIM */
+        @media (max-width: 1024px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+            article, aside {
+                width: 90vw;
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+            article, aside {
+                width: 98vw;
+                padding: 0.5rem;
+            }
+            section div, section p {
+                font-size: 1em;
+            }
+            footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+            article, aside {
+                width: 100vw;
+                padding: 0.2rem;
+            }
+            section div, section p {
+                font-size: 0.95em;
+            }
+            footer p, footer a {
+                font-size: 0.8em;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>

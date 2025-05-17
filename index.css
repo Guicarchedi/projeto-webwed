@@ -215,72 +215,113 @@ footer{
     transform: translateY(0);
 }
 
-/* Media Queries para dispositivos móveis */
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    main article {
+        width: 95vw;
+    }
+    main article .itens {
+        width: 90%;
+        left: 0;
+        top: 20%;
+        padding: 0.5rem;
+    }
+    main article img {
+        width: 250px;
+        left: 65%;
+        top: 20%;
+    }
+    footer nav {
+        width: 90%;
+    }
+}
+
 @media (max-width: 768px) {
     header {
         grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    header nav {
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
+        position: static;
     }
-
-    header nav a {
-        margin-bottom: 10px;
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
     }
-
-    main {
-        padding-top: 150px;
+    main article {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
     }
-
-    .itens {
+    main article .itens {
+        width: 100%;
+        position: static;
+        padding: 1rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main article .itens nav {
+        position: static;
+        width: 100%;
+        margin-top: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    main article .itens nav a {
         width: 90%;
+        margin: 0 auto;
     }
-
-    .itens-info h2 {
-        font-size: 1.8em;
+    main article img {
+        order: -1;
+        position: static;
+        width: 180px;
+        margin: 1.5rem auto 0.5rem auto;
+        display: block;
     }
-
-    .itens-info p {
-        font-size: 1em;
-        text-align: left;
-    }
-
     footer {
         flex-direction: column;
-        text-align: center;
+        position: static;
+        gap: 10px;
     }
-
-    footer div {
-        margin-bottom: 10px;
-    }
-
-    footer nav a {
-        margin-bottom: 10px;
+    footer nav {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
     }
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
     header h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
-
-    .itens-info p {
+    main article .itens-info h2 {
+        font-size: 1.2em;
+    }
+    main article .itens-info p {
+        font-size: 0.95em;
+        text-indent: 10px;
+        line-height: 1.4em;
+    }
+    main article img {
+        width: 120px;
+    }
+    .link-botao {
         font-size: 0.9em;
+        padding: 6px 10px;
     }
-
-    footer div p {
+    footer div > p {
         font-size: 0.7em;
-    }
-
-    footer nav a {
-        font-size: 1em;
+        margin-left: 0.3rem;
     }
 }
+
+
